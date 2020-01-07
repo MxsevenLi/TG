@@ -1,0 +1,357 @@
+/* Scss Document */
+article, aside, audio, canvas, caption, details,
+div, figure, footer, header, hgroup, iframe, img,
+mark, menu, nav, object, section, span, summary,
+table, tbody, td, tfoot, thead, tr, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  border: 0;
+  font-family: Arial,sans-serif;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a, abbr, address, b, blockquote, cit,
+code, dd, del, dfn, dl, dt, em, fieldset,
+h1, h2, h3, h4, h5, h6, hr, i, ins, label,
+legend, li, ol, p, pre, q, samp, small, strong, sub, sup, ul {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  border: 0;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #f0f5f8;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 14;
+}
+
+.layout {
+  width: 1024px;
+  zoom: 1;
+  margin: 0 auto;
+  position: relative;
+}
+
+.login h1, .login-sec h1, .signup h1, .signup-sec h1 {
+  font-size: 30px;
+  color: #5e5e70;
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+form ul li {
+  width: 30%;
+  float: left;
+  padding: 0 20px;
+  color: #393939;
+  line-height: 50px;
+  height: 50px;
+  position: relative;
+}
+
+form ul li input:not([type=radio]):not([type=checkbox]) {
+  border: 1px solid #ccd7dc;
+  border-radius: 2px;
+  padding: 4px 10px;
+  color: #393939;
+}
+
+.layout {
+  width: 100%;
+  max-width: 1024px !important;
+}
+
+form {
+  display: block;
+  padding: 40px;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ccd7dc;
+}
+
+form ul {
+  margin: 0 auto;
+  max-width: 420px;
+  list-style: none;
+  zoom: 1;
+}
+
+form ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+form ul:before {
+  content: '';
+  display: block;
+}
+
+.signup-sec {
+  margin: 0 auto;
+  background-color: #ccc;
+  background: url(../../assets/img/webp/login-back.png) no-repeat center bottom;
+  width: 100%;
+  height: 915px;
+  border-bottom: 1px solid #ccd7dc;
+  text-align: center;
+}
+
+.signup-sec .layout {
+  max-width: 420px !important;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.signup-sec .layout form {
+  padding: 0;
+}
+
+.signup-sec .layout form .info-centered.recaptcha {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.signup-sec .layout form .info-centered {
+  margin: 0 auto;
+  padding: 0 10px;
+  color: #97a1b1;
+}
+
+.signup-sec .layout form.log-sign {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.signup-sec .layout form.form-log {
+  position: relative;
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+  min-height: 130px;
+  padding: 15px 0;
+}
+
+.signup-sec .layout form.form-log .create-account {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #dd437c;
+}
+
+.signup-sec .layout form.form-log .create-account a {
+  display: inline-block;
+  line-height: 20px;
+  border-bottom: 2px solid #dd437c;
+}
+
+.signup-sec .layout #loginForm + .form-log {
+  top: -140px;
+  margin-bottom: -140px;
+}
+
+.signup-sec .layout #loginForm ul {
+  padding-top: 25px;
+}
+
+.signup-sec .layout #loginForm ul li:last-child {
+  margin-bottom: 120px;
+}
+
+.signup-sec .layout #loginForm ul li {
+  width: 100%;
+  height: auto;
+  padding: 5px 30px 10px;
+}
+
+.signup-sec .layout #loginForm ul li.text-login {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 5px 30px 10px;
+}
+
+.signup-sec .layout:before {
+  content: '';
+  display: block;
+}
+
+.signup-sec .layout:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.signup-sec .layout.login-sign {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.signup-sec .layout form {
+  padding: 0;
+}
+
+.signup-sec .layout form ul {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.signup-sec .layout form ul li {
+  position: relative;
+  padding: 30px;
+  color: #97a1b1;
+}
+
+.signup-sec .layout form ul li input.submit-signup {
+  width: 100%;
+  height: 52px;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  margin: auto;
+  z-index: 5;
+  border-color: #b32057;
+  -webkit-box-shadow: 0 0;
+  -moz-box-shadow: 0 0;
+  box-shadow: 0 0;
+}
+
+.signup-sec .layout form ul li i {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 55px;
+}
+
+.signup-sec .layout form ul li i.eye-slash {
+  display: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  background: url(../../assets/img/eye-slash.svg) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 20px;
+  right: 75px;
+}
+
+.signup-sec .layout form ul li input[type=email], .signup-sec .layout form ul li input[type=password], .signup-sec .layout form ul li input[type=text] {
+  width: 100%;
+  height: 47px;
+  padding: 5px 20px;
+}
+
+.signup-sec .layout form ul li input[type=checkbox] {
+  position: relative;
+  vertical-align: baseline;
+  top: 2px;
+  margin-top: 18px;
+}
+
+.signup-sec .layout form ul li:nth-child(odd) {
+  width: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.signup-sec h1 {
+  color: #dd437e;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 30px;
+}
+
+.signup-sec.login-sec {
+  padding-top: 50px;
+  background: #e3eef7 url(../../assets/img/webp/login-back.png) no-repeat center bottom;
+}
+
+.signup-sec.login-sec h1 {
+  color: #dd437c;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+}
+
+input[type="hidden"] {
+  display: none;
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
+.forget-pass {
+  padding-left: 5%;
+  display: inline-block;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #dd437c;
+}
+
+.mainbtn {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  color: #fff !important;
+  background: #dd437c;
+  border: 1px solid #d92d6d;
+  cursor: pointer;
+  -webkit-border-radius: 5px !important;
+  border-radius: 5px !important;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1);
+  box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1);
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: #dd437c;
+}

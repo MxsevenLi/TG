@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh-Hans" xmlns="#"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="zh-Hans" xmlns="#"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="zh-Hans" xmlns="#"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie9" lang="zh-Hans" xmlns="#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="zh-Hans" xmlns="#"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="192*192" href="../assets/img/favicon_big.jpg">
+  <link rel="icon" sizes="192*192" href="../assets/img/favicon_big.jpg">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="scss/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    <div class="modal-overlay"></div>
+    <div id="page">
+      <section class="login-sec signup-sec">
+        <h1>注册</h1>
+        <div class="layout">
+          <form id="loginForm" class="log-sign" action="#" method="POST">
+            <noscript>
+              <p class="error-msg">注意：你需要启用javascript才可进行登录</p>
+            </noscript>
+              <ul>
+                <li>
+                  <input type="email" name="mailAddress" id="s-email" value="" 
+                  dispname="电子邮件" tabindex="1" placeholder="电子邮件" maxlength="64">
+                  <i></i>
+                </li>
+                <li>
+                    <input type="password" name="password" id="s-password" 
+                    value="" dispname="密码" tabindex="2" placeholder="密码" maxlength="20" minlength="6">
+                    <i></i>
+                    <i class="eye-slash"></i>
+                </li>
+                  <li>
+                      <input type="password" name="password" id="s-password"
+                             value="" dispname="确认密码" tabindex="2" placeholder="确认密码" maxlength="20" minlength="6">
+                      <i></i>
+                      <i class="eye-slash"></i>
+                  </li>
+                
+                <li>
+                    <input type="submit" value="登陆" class="mainbtn submit-signup" id="login-button" tabindex="6">
+                </li>
+              </ul>
+          </form>
+          <form class="form-log" action="#" method="GET">
+               <p class="create-account">
+                  已有账号？
+                  <a href="login.html" rel="nofollow" data-trackid="NTK">登录</a>
+               </p>
+               <p class="info-centered recaptcha">
+                  This site is protected by virtual and the Google 
+                 <a href="404.html" tabindex="7">
+                   隐私政策
+                 </a>
+                 和
+                 <a href="404.html" rel="nofollow" tabindex="8">
+                   Terms of Service
+                 </a>
+               </p>
+          </form>
+        </section>
+      </div>
+
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="../js/togetherjs-min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
