@@ -1,0 +1,20 @@
+/* Scss Document */
+.about-chara {
+  position: absolute;
+  top: -200px;
+  right: -80px;
+  width: 550px;
+  height: 1100px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.about-chara .mycanvas {
+  width: 550px;
+  height: 1700px;
+}
+
+.about-chara .mycanvas > canvas {
+  width: 100%;
+  height: 100%;
+}

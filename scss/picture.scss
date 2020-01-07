@@ -1,0 +1,61 @@
+/* Scss Document */
+@keyframes image-appear {
+	0%,
+	100% {
+		transform: translateY(-15px);
+		opacity: 0;
+	}
+
+	10%,
+	90% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.slideshow {
+	text-align: center;
+	border: 20px solid black;
+
+	picture, img {
+		display: none;
+		max-width: 100%;
+		animation-name: image-appear;
+		animation-duration: 2.5s;
+		animation-timing-function: ease-in-out;
+		opacity: 0;
+
+	}
+
+	picture.shown, .shown img {
+		display: inline-block;
+	}
+
+	.source {
+		position: absolute;
+		bottom: 10px;
+		right: 50%;
+		background: #e66;
+		color: #fff;
+		text-decoration: none;
+		padding: 5px 10px;
+		border-radius: 2px;
+		z-index: 100;
+		opacity: 0.8;
+	}
+
+	.source:hover {
+		background: #F77;
+		opacity: 1;
+	}
+	::selection {
+		background: #e66;
+		color: #fff;
+	}
+	a:-webkit-any-link {
+		color: -webkit-link;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
